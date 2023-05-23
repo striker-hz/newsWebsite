@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>简洁新闻</title>
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="static/css/bootstrap.css" />
+  <!--  add icon-->
+  <link rel="shortcut icon" href="static/images/news2.png" type="image/x-icon" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet" />
+  <!-- slick slider -->
+
+<!--  <link rel="stylesheet" href="static/css/slick-theme.css" />-->
+  <!-- font awesome style -->
+  <link href="static/css/font-awesome.min.css" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="static/css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="static/css/responsive.css" rel="stylesheet" />
+  <link href="static/css/add.style.css" rel="stylesheet" />
+
+
+</head>
+<body class="sub_page">
+ <div class="hero_area">
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              简洁新闻
+            </span>
+          </a>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item ">
+                  <a class="nav-link" href="index.html">主页 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="InLand.html"> 国内时事</a>
+                    <ul class="two">
+                         <li><a href="InLand_1.html">两会速递</a> </li>
+                         <li><a href="InLand_2.html">疫情速递</a> </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Recreation.html">地区新闻</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="International.html">国际时事</a>
+                    <ul class="two">
+                         <li><a href="International_1.html">俄乌局势</a> </li>
+                    </ul>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="Contribute.html">投稿 </a>
+                </li>
+                  <li class="nav-item">
+                  <a class="nav-link" href="UserSubmit.html">用户投稿 </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+ <div style="width: 100%;margin-top: 10px;margin-left: 50px">
+ <form method="post">
+     <table class="multi-table" border="1px">
+        <tr style="height: 50px;text-align: center;">
+            <th style="width: 100px">
+                <input id="js-all-checkbox" type="checkbox" onclick="checkAll(this)">
+            </th>
+             <th style="width: 100px">ID</th>
+{#             <th style="width: 100px">姓名</th>#}
+{#             <th style="width: 200px">联系方式</th>#}
+{#             <th style="width: 300px">邮箱</th>#}
+             <th style="width: 800px">投稿</th>
+         </tr>
+     <tbody>
+     {% for i in user_Message.items() %}
+        <tr style="height: 50px;text-align: center;">
+            <th>
+                <input type="checkbox" name="select" value="{{ i[0] }}" onclick="clickCheckbox()">
+            </th>
+            <th>{{ i[0] }}</th>
+{#            <th>{{ i[1]}}</th>#}
+{#            <th>{{ i[2]}}</th>#}
+{#            <th>{{ i[3]}}</th>#}
+            <th>{{ i[1]}}</th>
+        </tr>
+    {% endfor %}
+     </tbody>
+    </table>
+ <h3>当前选中: <span id="js-check-text"></span></h3>
+ <input type="submit" value="确定展示" onclick="alert(checkValues)" >
+ </form>
+
+ <script>
+    var checkValues = []
+    function clickCheckbox () {
+      var checkDomArr = document.querySelectorAll('.multi-table tbody input[type=checkbox]:checked')
+      checkValues = []
+      for (var i = 0, len = checkDomArr.length; i < len; i++) {
+        checkValues.push(checkDomArr[i].value)
+      }
+      updateText()
+      var allCheckDomArr = document.querySelectorAll('.multi-table tbody input[type=checkbox]')
+      var allCheckbox = document.getElementById('js-all-checkbox')
+      for (var i = 0, len = allCheckDomArr.length; i < len; i++) {
+        if (!allCheckDomArr[i].checked) {
+          if (allCheckbox.checked) allCheckbox.checked = false
+          break
+        } else if (i === len - 1) {
+          document.getElementById('js-all-checkbox').checked = true
+          return
+        }
+      }
+    }
+    function checkAll (current) {
+      var allCheckDomArr = document.querySelectorAll('.multi-table tbody input[type=checkbox]')
+      if (!current.checked) { // 点击的时候, 状态已经修改, 所以没选中的时候状态时true
+        checkValues = []
+        for (var i = 0, len = allCheckDomArr.length; i < len; i++) {
+          var checkStatus = allCheckDomArr[i].checked
+          if (checkStatus) allCheckDomArr[i].checked = false
+        }
+      } else {
+        checkValues = []
+        for (var i = 0, len = allCheckDomArr.length; i < len; i++) {
+          var checkStatus = allCheckDomArr[i].checked
+          if (!checkStatus) allCheckDomArr[i].checked = true
+          checkValues.push(allCheckDomArr[i].value)
+        }
+      }
+      updateText()
+    }
+
+    function updateText () {
+      document.getElementById('js-check-text').innerHTML = JSON.stringify(checkValues)
+    }
+  </script>
+ </div>
+<div>
+</div>
+
+</body>
+</html>

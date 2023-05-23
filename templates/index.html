@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>简洁新闻</title>
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="static/css/bootstrap.css" />
+  <!--  add icon-->
+  <link rel="shortcut icon" href="static/images/news2.png" type="image/x-icon" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet" />
+  <!-- slick slider -->
+
+<!--  <link rel="stylesheet" href="static/css/slick-theme.css" />-->
+  <!-- font awesome style -->
+  <link href="static/css/font-awesome.min.css" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="static/css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="static/css/responsive.css" rel="stylesheet" />
+     <link href="static/css/add.style.css" rel="stylesheet" />
+
+</head>
+
+<body class="politics_version">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="">
+        <div class="topbar text-center hidden-xs">
+	    <p>本网站使用cookie。 继续浏览简洁新闻，即表示您同意使用我们的网站cookie。
+            <a href="#">Find out more here > </a>
+        </p>
+        </div>
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              简洁新闻
+            </span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active ">
+                  <a class="nav-link" href="index.html">主页 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="InLand.html"> 国内时事</a>
+                    <ul class="two">
+                         <li><a href="InLand_1.html">两会速递</a> </li>
+                         <li><a href="InLand_2.html">疫情速递</a> </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Recreation.html">地区新闻</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="International.html">国际时事</a>
+                    <ul class="two">
+                         <li><a href="International_1.html">俄乌局势</a> </li>
+                    </ul>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="Contribute.html">投稿 </a>
+                </li>
+                  <li class="nav-item">
+                  <a class="nav-link" href="UserSubmit.html">用户投稿 </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class="slider_section ">
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators" style="color:black;">
+          <li data-target="#customCarousel1" data-slide-to="0" class="active">1</li>
+          <li data-target="#customCarousel1" data-slide-to="1">2</li>
+          <li data-target="#customCarousel1" data-slide-to="2">3</li>
+          <li data-target="#customCarousel1" data-slide-to="3">4</li>
+          <li data-target="#customCarousel1" data-slide-to="4">5</li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8 mx-auto">
+                  <div class="detail_box">
+                    <p>
+                     {{title_head[0]}}
+                    </p>
+                    <a href="{{ link_head[0]}}">
+                      Read More
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8 mx-auto">
+                  <div class="detail_box">
+                    <p>
+                      {{title_head[1]}}
+                    </p>
+                    <a href="{{ link_head[1]}}">
+                      Read More
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8 mx-auto">
+                  <div class="detail_box">
+                    <p>
+                      {{title_head[2]}}
+                    </p>
+                    <a href="{{ link_head[2]}}">
+                      Read More
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8 mx-auto">
+                  <div class="detail_box">
+                    <p>
+                     {{title_head[3]}}
+                    </p>
+                    <a href="{{ link_head[3]}}">
+                      Read More
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8 mx-auto">
+                  <div class="detail_box">
+                    <p>
+                      {{title_head[4]}}
+                    </p>
+                    <a href="{{ link_head[4]}}">
+                      Read More
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end slider section -->
+  </div>
+
+  <!-- 科技前线板块  -->
+  <section class="about_section layout_padding">
+      <div class="about_1">
+          <div class="about_3">
+              <img src="static/images/科技.png" style="float: left;">
+              <h4 style="float: left;margin-top: 30px;margin-left: 30px">
+                  科技前线
+              </h4>
+          </div>
+{#          块1#}
+          <div class="about_2">
+            <ul>
+               {% for i in list_1.items() %}
+                   <li><a href="title={{ i[0]}}|DetailPage.html"  target="_blank">
+                       {{i[0]}}</a>
+                   </li>
+               {% endfor %}
+            </ul>
+          </div>
+          <div class="about_2">
+              <ul>
+               {% for i in list_2.items() %}
+                   <li><a href="title={{ i[0]}}|DetailPage.html"  target="_blank">{{i[0]}}</a></li>
+               {% endfor %}
+            </ul>
+
+          </div>
+          <div class="about_2">
+              <ul>
+               {% for i in list_3.items() %}
+                   <li><a href="title={{ i[0]}}|DetailPage.html"  target="_blank">{{i[0]}}</a></li>
+               {% endfor %}
+            </ul>
+
+          </div>
+
+      </div>
+
+  </section>
+  <!-- end 科技前线板块 -->
+
+  <!--  体育新闻板块 -->
+  <section class="course_section layout_padding-bottom">
+            <div class="about_1">
+          <div class="about_3">
+              <img src="static/images/体育.png" style="float: left">
+              <h4 style="float: left;margin-top: 30px;margin-left: 30px">
+                  体育新闻
+              </h4>
+          </div>
+{#          块1#}
+          <div class="about_2">
+            <ul>
+               {% for i in list_4.items() %}
+                   <li><a href="title={{ i[0]}}|DetailPage.html"  target="_blank">{{i[0]}}</a></li>
+               {% endfor %}
+            </ul>
+          </div>
+          <div class="about_2">
+              <ul>
+               {% for i in list_5.items() %}
+                   <li><a href="title={{ i[0]}}|DetailPage.html"  target="_blank">{{i[0]}}</a></li>
+               {% endfor %}
+            </ul>
+
+          </div>
+          <div class="about_2">
+              <ul>
+               {% for i in list_6.items() %}
+                   <li><a href="title={{ i[0]}}|DetailPage.html"  target="_blank">{{i[0]}}</a></li>
+               {% endfor %}
+            </ul>
+
+          </div>
+
+      </div>
+  </section>
+  <!-- end 体育新闻板块 -->
+
+  <!--  社会热点板块 -->
+    <section class="course_section layout_padding-bottom">
+            <div class="about_1">
+          <div class="about_3">
+              <img src="static/images/社会.png" style="float: left">
+              <h4 style="float: left;margin-top: 30px;margin-left: 30px">
+                  社会热点
+              </h4>
+          </div>
+{#          块1#}
+          <div class="about_2">
+            <ul>
+               {% for i in list_7.items() %}
+                   <li><a href="title={{ i[0]}}|DetailPage.html"  target="_blank">{{i[0]}}</a></li>
+               {% endfor %}
+            </ul>
+          </div>
+          <div class="about_2">
+              <ul>
+               {% for i in list_8.items() %}
+                   <li><a href="title={{ i[0]}}|DetailPage.html"  target="_blank">{{i[0]}}</a></li>
+               {% endfor %}
+            </ul>
+
+          </div>
+          <div class="about_2">
+              <ul>
+               {% for i in list_9.items() %}
+                   <li><a href="title={{ i[0]}}|DetailPage.html"  target="_blank">{{i[0]}}</a></li>
+               {% endfor %}
+            </ul>
+
+          </div>
+
+      </div>
+  </section>
+  <!-- end 社会热点板块 -->
+
+  <!-- 用户订阅板块 -->
+
+  <section class="subscribe_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="img-box">
+            <img src="static/images/subscribe-img.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <h2>
+             订阅频道
+            </h2>
+            <form action="" method="POST">
+              <input name="subscribe" id="subscribe" type="email" placeholder="请输入邮箱：">
+              <button type="submit">
+                订阅
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end 用户订阅板块 -->
+
+  <!-- lab section -->
+    <section class="course_section layout_padding-bottom">
+            <div class="about_1">
+          <div class="about_3">
+              <img src="static/images/娱乐.png" style="float: left">
+              <h4 style="float: left;margin-top: 30px;margin-left: 30px">
+                  娱乐新天地
+              </h4>
+          </div>
+{#          块1#}
+          <div class="about_2">
+            <ul>
+               {% for i in list_lab1.items() %}
+                   <li><a href="{{ i[1]}}"  target="_blank">{{i[0]}}</a></li>
+               {% endfor %}
+            </ul>
+          </div>
+          <div class="about_2">
+              <ul>
+               {% for i in list_lab2.items() %}
+                   <li><a href="{{ i[1]}}"  target="_blank">{{i[0]}}</a></li>
+               {% endfor %}
+            </ul>
+
+          </div>
+          <div class="about_2">
+              <ul>
+               {% for i in list_lab3.items() %}
+                   <li><a href="{{ i[1]}}"  target="_blank">{{i[0]}}</a></li>
+               {% endfor %}
+            </ul>
+
+          </div>
+
+      </div>
+  </section>
+  <!-- end lab section -->
+
+  <div class="bottom_bg">
+    <!-- client section -->
+    <section class="client_section layout_padding">
+      <div class="container">
+        <div class="heading_container">
+          <h2>
+           International Train
+          </h2>
+        </div>
+      </div>
+      <div id="customCarousel3" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="box">
+                <div class="client_info">
+                  <div class="client_name">
+                    <h4>
+                      <a href="{{link_bot[0]}}">
+                          {{ title_bot[0]}}
+                      </a>
+                    </h4>
+                    <h6>
+                      {{ source_bot[0]}}
+                    </h6>
+                  </div>
+                  <i class="fa fa-quote-left" aria-hidden="true"></i>
+                </div>
+                <p>
+                    {{ desc_bot[0]}}
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="box">
+                <div class="client_info">
+                  <div class="client_name">
+                    <h4>
+                      <a href="{{link_bot[1]}}">
+                          {{ title_bot[1]}}
+                      </a>
+                    </h4>
+                    <h6>
+                      {{ source_bot[1]}}
+                    </h6>
+                  </div>
+                  <i class="fa fa-quote-left" aria-hidden="true"></i>
+                </div>
+                <p>
+                 {{ desc_bot[1]}}
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="box">
+                <div class="client_info">
+                  <div class="client_name">
+                    <h4>
+                      <a href="{{link_bot[2]}}">
+                          {{ title_bot[2]}}
+                      </a>
+                    </h4>
+                    <h6>
+                      {{ source_bot[2]}}
+                    </h6>
+                  </div>
+                  <i class="fa fa-quote-left" aria-hidden="true"></i>
+                </div>
+                <p>
+                    {{ desc_bot[2]}}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel_btn-box">
+          <a class="carousel-control-prev" href="#customCarousel3" role="button" data-slide="prev">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#customCarousel3" role="button" data-slide="next">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- end client section -->
+
+    <!-- info section -->
+    <section class="info_section ">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+            <hr>
+          </div>
+        </div>
+        <div class="info_box ">
+          <div class="info_contact">
+            <a href="">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>
+                Location
+              </span>
+            </a>
+            <a href="">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>
+                +86 17835345228
+              </span>
+            </a>
+            <a href="">
+              <i class="fa fa-envelope"></i>
+              <span>
+                17835345228@163.com
+              </span>
+            </a>
+          </div>
+          <div class="social_box">
+            <a href="">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end info_section -->
+
+  </div>
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <div class="footer_box">
+        <p>Copyright &copy; 2022.计算机科学与技术 专升本（3）班  张恒  毕业设计.</p>
+        <p>
+          Privacy & Policy
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script src="static/js/jquery-3.4.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="static/js/bootstrap.js"></script>
+  <!-- custom js -->
+  <script src="static/js/custom.js"></script>
+
+   <script src = "static/js/control.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+  <!-- End Google Map -->
+
+</body>
+
+</html>

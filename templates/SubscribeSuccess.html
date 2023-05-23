@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}简洁新闻{% endblock %}
+{% block head %}
+    {{ super()}}
+    <link href="static/css/add.style.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="static/images/news2.png" type="image/x-icon" />
+{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+    <h1>订阅成功，后续重大新闻将通过邮箱方式通知您！</h1><br>
+    <form action="index.html" method="GET">
+        <button >
+        返回首页
+        </button>
+    </form>
+
+
+</div>
+{% endblock %}

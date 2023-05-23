@@ -1,0 +1,2 @@
+# 配置文件
+SECRET_KEY = 'HENGSTRIVEHz_08'

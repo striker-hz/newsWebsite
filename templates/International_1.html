@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>简洁新闻</title>
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="static/css/bootstrap.css" />
+  <!--  add icon-->
+  <link rel="shortcut icon" href="static/images/news2.png" type="image/x-icon" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet" />
+  <!-- slick slider -->
+
+<!--  <link rel="stylesheet" href="static/css/slick-theme.css" />-->
+  <!-- font awesome style -->
+  <link href="static/css/font-awesome.min.css" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="static/css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="static/css/responsive.css" rel="stylesheet" />
+     <link href="static/css/add.style.css" rel="stylesheet" />
+  <style>
+    a.title:hover{
+      text-decoration:underline;
+      color:red;
+    }
+    a.title{
+      color: white;
+    }
+  </style>
+
+</head>
+
+<body class="sub_page">
+
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              简洁新闻
+            </span>
+          </a>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item ">
+                  <a class="nav-link" href="index.html">主页 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="InLand.html"> 国内时事</a>
+                    <ul class="two">
+                         <li><a href="InLand_1.html">两会速递</a> </li>
+                         <li><a href="InLand_2.html">疫情速递</a> </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Recreation.html">地区新闻</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="International.html">国际时事</a>
+                    <ul class="two">
+                         <li><a href="International_1.html">俄乌局势</a> </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Contribute.html">投稿 </a>
+                </li>
+                  <li class="nav-item">
+                  <a class="nav-link" href="UserSubmit.html">用户投稿 </a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+  <div  class="bottom_bg">
+    <!-- client section -->
+    <section class="client_section layout_padding" style="width: 100%;height: 1000px">
+      <div class="container">
+        <div class="heading_container">
+          <h2 style="color: #a71d2a">
+            俄乌局势时间线
+          </h2>
+        </div>
+      </div>
+      <div id="customCarousel3" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+{#            1#}
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="box">
+                <div class="client_info">
+                    <div class="client_name">
+                        <h5>
+                            <a  class = 'title '  href="{{ link[0] }}">
+                               {{ pubdate[0]}}
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                “{{ title[0]}}”
+                            </a>
+                         </h5><br>
+                         <h5>
+                            <a  class = 'title '  href="{{ link[1] }}">
+                                {{ pubdate[1]}}
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 “{{ title[1]}}”
+                            </a>
+                         </h5><br>
+                         <h5>
+                            <a  class = 'title '  href="{{ link[2] }}">
+                                {{ pubdate[2]}}
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 “{{ title[2]}}”
+                            </a>
+                         </h5><br>
+                         <h5>
+                            <a  class = 'title '  href="{{ link[3] }}">
+                                {{ pubdate[3]}}
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 “{{ title[3]}}”
+                            </a>
+                         </h5><br>
+                         <h5>
+                            <a  class = 'title '  href="{{ link[4] }}">
+                                {{ pubdate[4]}}
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 “{{ title[4]}}”
+                            </a>
+                         </h5><br>
+                         <h5>
+                            <a  class = 'title '  href="{{ link[5] }}">
+                                {{ pubdate[5]}}
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 “{{ title[5]}}”
+                            </a>
+                         </h5><br>
+                         <h5>
+                            <a  class = 'title '  href="{{ link[6] }}">
+                                {{ pubdate[6]}}
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 “{{ title[6]}}”
+                            </a>
+                         </h5><br>
+                         <h5>
+                            <a  class = 'title '  href="{{ link[7] }}">
+                                {{ pubdate[7]}}
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 “{{ title[7]}}”
+                            </a>
+                         </h5><br>
+                         <h5>
+                            <a  class = 'title '  href="{{ link[8] }}">
+                                {{ pubdate[8]}}
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 “{{ title[8]}}”
+                            </a>
+                         </h5><br>
+                         <h5>
+                            <a  class = 'title '  href="{{ link[9] }}">
+                                {{ pubdate[9]}}
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 “{{ title[9]}}”
+                            </a>
+                         </h5><br>
+                        <h5>
+                            <a  class = 'title '  href="{{ link[10] }}">
+                                {{ pubdate[10]}}
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 “{{ title[10]}}”
+                            </a>
+                         </h5><br>
+                         <h5>
+                            <a  class = 'title '  href="{{ link[11] }}">
+                                {{ pubdate[11]}}
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 “{{ title[11]}}”
+                            </a>
+                         </h5><br>
+                         <h5>
+                            <a  class = 'title '  href="{{ link[12] }}">
+                                {{ pubdate[12]}}
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 “{{ title[12]}}”
+                            </a>
+                         </h5><br>
+                         <h5>
+                            <a  class = 'title '  href="{{ link[13] }}">
+                                {{ pubdate[13]}}
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 “{{ title[13]}}”
+                            </a>
+                         </h5><br>
+                         <h5>
+                            <a  class = 'title '  href="{{ link[14] }}">
+                                {{ pubdate[14]}}
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 “{{ title[14]}}”
+                            </a>
+                         </h5><br>
+                  </div>
+                  <i class="fa fa-quote-left" aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1</i>
+                </div>
+              </div>
+            </div>
+          </div>
+{#            2#}
+          <div class="carousel-item">
+            <div class="container">
+              <div class="box">
+                <div class="client_info">
+                    <div class="client_name">
+                         <h5>
+                            <a  class = 'title '  href="{{ link[15] }}">
+                                {{ pubdate[15]}}
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 “{{ title[15]}}”
+                            </a>
+                         </h5><br>
+                         <h5>
+                            <a  class = 'title '  href="{{ link[16] }}">
+                                {{ pubdate[16]}}
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 “{{ title[16]}}”
+                            </a>
+                         </h5><br>
+                         <h5>
+                            <a  class = 'title '  href="{{ link[17] }}">
+                                {{ pubdate[17]}}
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 “{{ title[17]}}”
+                            </a>
+                         </h5><br>
+                         <h5>
+                            <a  class = 'title '  href="{{ link[18] }}">
+                                {{ pubdate[18]}}
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 “{{ title[18]}}”
+                            </a>
+                         </h5><br>
+                         <h5>
+                            <a  class = 'title '  href="{{ link[19] }}">
+                                {{ pubdate[19]}}
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 “{{ title[19]}}”
+                            </a>
+                         </h5><br>
+                         <h5>
+                            <a  class = 'title '  href="{{ link[20] }}">
+                                {{ pubdate[20]}}
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 “{{ title[20]}}”
+                            </a>
+                         </h5><br>
+                         <h5>
+                            <a  class = 'title '  href="{{ link[21] }}">
+                                {{ pubdate[21]}}
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 “{{ title[21]}}”
+                            </a>
+                         </h5><br>
+                         <h5>
+                            <a  class = 'title '  href="{{ link[22] }}">
+                                {{ pubdate[22]}}
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 “{{ title[22]}}”
+                            </a>
+                         </h5><br>
+                         <h5>
+                            <a  class = 'title '  href="{{ link[23] }}">
+                                {{ pubdate[23]}}
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 “{{ title[23]}}”
+                            </a>
+                         </h5><br>
+                         <h5>
+                            <a  class = 'title '  href="{{ link[24] }}">
+                                {{ pubdate[24]}}
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 “{{ title[24]}}”
+                            </a>
+                         </h5><br>
+                         <h5>
+                            <a  class = 'title '  href="{{ link[25] }}">
+                                {{ pubdate[25]}}
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 “{{ title[25]}}”
+                            </a>
+                         </h5><br>
+                         <h5>
+                            <a  class = 'title '  href="{{ link[26] }}">
+                                {{ pubdate[26]}}
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 “{{ title[26]}}”
+                            </a>
+                         </h5><br>
+                         <h5>
+                            <a  class = 'title '  href="{{ link[27] }}">
+                                {{ pubdate[27]}}
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 “{{ title[27]}}”
+                            </a>
+                         </h5><br>
+                         <h5>
+                            <a  class = 'title '  href="{{ link[28] }}">
+                                {{ pubdate[28]}}
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 “{{ title[28]}}”
+                            </a>
+                         </h5><br>
+                         <h5>
+                            <a  class = 'title '  href="{{ link[29] }}">
+                                {{ pubdate[29]}}
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 “{{ title[29]}}”
+                            </a>
+                         </h5><br>
+                  </div>
+                  <i class="fa fa-quote-left" aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2</i>
+                </div>
+              </div>
+            </div>
+          </div>
+{#            3#}
+          <div class="carousel-item">
+            <div class="container">
+              <div class="box">
+                <div class="client_info">
+                  <div class="client_name">
+                       <h5>
+                            <a  class = 'title '  href="{{ link[30] }}">
+                                {{ pubdate[30]}}
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 “{{ title[30]}}”
+                            </a>
+                         </h5><br>
+                         <h5>
+                            <a  class = 'title '  href="{{ link[31] }}">
+                                {{ pubdate[31]}}
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 “{{ title[31]}}”
+                            </a>
+                         </h5><br>
+                         <h5>
+                            <a  class = 'title '  href="{{ link[32] }}">
+                                {{ pubdate[32]}}
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 “{{ title[32]}}”
+                            </a>
+                         </h5><br>
+                         <h5>
+                            <a  class = 'title '  href="{{ link[33] }}">
+                                {{ pubdate[33]}}
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 “{{ title[33]}}”
+                            </a>
+                         </h5><br>
+                         <h5>
+                            <a  class = 'title '  href="{{ link[34] }}">
+                                {{ pubdate[34]}}
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 “{{ title[34]}}”
+                            </a>
+                         </h5><br>
+                         <h5>
+                            <a  class = 'title '  href="{{ link[35] }}">
+                                {{ pubdate[35]}}
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 “{{ title[35]}}”
+                            </a>
+                         </h5><br>
+                         <h5>
+                            <a  class = 'title '  href="{{ link[36] }}">
+                                {{ pubdate[36]}}
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 “{{ title[36]}}”
+                            </a>
+                         </h5><br>
+                         <h5>
+                            <a  class = 'title '  href="{{ link[37] }}">
+                                {{ pubdate[37]}}
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 “{{ title[37]}}”
+                            </a>
+                         </h5><br>
+                         <h5>
+                            <a  class = 'title '  href="{{ link[38] }}">
+                                {{ pubdate[38]}}
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 “{{ title[38]}}”
+                            </a>
+                         </h5><br>
+                         <h5>
+                            <a  class = 'title '  href="{{ link[39] }}">
+                                {{ pubdate[39]}}
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 “{{ title[39]}}”
+                            </a>
+                         </h5><br>
+                       <h5>
+                            <a  class = 'title '  href="{{ link[40] }}">
+                                {{ pubdate[40]}}
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 “{{ title[40]}}”
+                            </a>
+                         </h5><br>
+                         <h5>
+                            <a  class = 'title '  href="{{ link[41] }}">
+                                {{ pubdate[41]}}
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 “{{ title[41]}}”
+                            </a>
+                         </h5><br>
+                         <h5>
+                            <a  class = 'title '  href="{{ link[42] }}">
+                                {{ pubdate[42]}}
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 “{{ title[42]}}”
+                            </a>
+                         </h5><br>
+                         <h5>
+                            <a  class = 'title '  href="{{ link[43] }}">
+                                {{ pubdate[43]}}
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 “{{ title[43]}}”
+                            </a>
+                         </h5><br>
+                         <h5>
+                            <a  class = 'title '  href="{{ link[44] }}">
+                                {{ pubdate[44]}}
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 “{{ title[44]}}”
+                            </a>
+                         </h5><br>
+
+                  </div>
+                  <i class="fa fa-quote-left" aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3</i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+{#          start#}
+        <div class="carousel_btn-box">
+          <a class="carousel-control-prev" href="#customCarousel3" role="button" data-slide="prev">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#customCarousel3" role="button" data-slide="next">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+{#          end#}
+      </div>
+    </section>
+    <!-- end client section -->
+<section class="info_section ">
+      <div class="container">
+        <div class="info_box ">
+          <div class="info_contact">
+            <a href="">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>
+                Location
+              </span>
+            </a>
+            <a href="">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>
+                +86 17835345228
+              </span>
+            </a>
+            <a href="">
+              <i class="fa fa-envelope"></i>
+              <span>
+                17835345228@163.com
+              </span>
+            </a>
+          </div>
+          <div class="social_box">
+            <a href="">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end info_section -->
+    <!-- info section -->
+  </div>
+
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <div class="footer_box">
+        <p>Copyright &copy; 2022.计算机科学与技术 专升本（3）班  张恒  毕业设计.</p>
+        <p>
+          Privacy & Policy
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script src="static/js/jquery-3.4.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="static/js/bootstrap.js"></script>
+  <!-- custom js -->
+  <script src="static/js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+  <!-- End Google Map -->
+
+</body>
+
+</html>

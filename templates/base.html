@@ -1,0 +1,55 @@
+{% extends "bootstrap/base.html" %}
+
+{% block title %}简洁新闻{% endblock %}
+{% block head %}
+    {{ super()}}
+    <link href="static/css/add.style.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="static/images/news2.png" type="image/x-icon" />
+{% endblock %}
+
+
+{% block navbar %}
+<div class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">简洁新闻</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">主页</a></li>
+                <li>
+                    <a href="InLand.html">国内时事</a>
+                    <ul class="two">
+                         <li><a href="InLand_1.html">两会速递</a> </li>
+                         <li><a href="InLand_2.html">疫情速递</a> </li>
+                    </ul>
+                </li>
+                <li><a href="Recreation.html">地区新闻</a></li>
+                <li>
+                    <a href="International.html">国际时事</a>
+                    <ul class="two">
+                         <li><a href="International_1.html">俄乌局势</a> </li>
+                    </ul>
+                </li>
+
+                <li><a href="Contribute.html">投稿</a></li>
+                <li><a href="UserSubmit.html">用户投稿</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="page-header">
+    {% block page_content %}{% endblock %}
+    </div>
+</div>
+{% endblock %}
